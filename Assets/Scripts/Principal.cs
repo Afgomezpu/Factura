@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.DataTime;
+
 
 public class Principal : MonoBehaviour
 {
@@ -19,19 +24,36 @@ public class Principal : MonoBehaviour
     public GameObject LecturaActualReactiva;
     public GameObject LecturaAnteriorReactiva;
     public GameObject FactorMultiplicacionReactiva;
-
-    public Dropdown Municipio;
-    public Dropdown Estrato;
+    public TMP_Dropdown Municipio;
+    public TMP_Dropdown Estrato;  
+    public GameObject TotalKilowatios;
+    public GameObject Subsidio;  
+    DateTime fecha;
     
 
+
     void Start()
-    {
-        
+    {   
+        DropdownItemSelected(Municipio);
+        Municipio.onValueChanged.AddListener(delegate{DropdownItemSelected(Municipio);});
+        DropdownItemSelected(Estrato);
+        Estrato.onValueChanged.AddListener(delegate{DropdownItemSelectedEstrato(Estrato);});
+        fecha = new DateTime("13/mar/2021");
     }
 
     
     void Update()
     {
+        
+    }
+
+    void DropdownItemSelected(TMP_Dropdown dropdown){
+        int index=dropdown.value;
+
+    }
+
+    void DropdownItemSelectedEstrato(TMP_Dropdown dropdown){
+        int index=dropdown.value;
         
     }
 }
