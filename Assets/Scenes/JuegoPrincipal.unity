@@ -31087,6 +31087,67 @@ MonoBehaviour:
   m_Script: {fileID: -146154839, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1424334539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424334541}
+  - component: {fileID: 1424334540}
+  m_Layer: 0
+  m_Name: ControladorFactura
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1424334540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424334539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3cf2a27a8164964a891ea23874390e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nombre: {fileID: 0}
+  Direccion: {fileID: 0}
+  DireccionPostal: {fileID: 0}
+  fechaFactura: {fileID: 0}
+  Facturadesdehasta: {fileID: 0}
+  DiaDefactura: {fileID: 0}
+  ConsumoActiva: {fileID: 0}
+  LecturaActual: {fileID: 0}
+  LeccturaAnterior: {fileID: 0}
+  FactorMultiplicacion: {fileID: 0}
+  ConsumoReactiva: {fileID: 0}
+  LecturaActualReactiva: {fileID: 0}
+  LecturaAnteriorReactiva: {fileID: 0}
+  FactorMultiplicacionReactiva: {fileID: 0}
+  Municipio: {fileID: 0}
+  Estrato: {fileID: 0}
+  TotalKilowatios: {fileID: 0}
+  Subsidio: {fileID: 0}
+--- !u!4 &1424334541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424334539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.1482, y: 3666.804, z: 26.242188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447569842
 GameObject:
   m_ObjectHideFlags: 0
